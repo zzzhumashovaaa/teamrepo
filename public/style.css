@@ -17,10 +17,20 @@ body {
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   text-align: center;
   width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
 }
 
 .container.blue {
   background-color: #0078ff;
+  color: #fff;
+}
+
+.container.red {
+  background-color: #ff4d4d;
   color: #fff;
 }
 
@@ -29,7 +39,7 @@ h1 {
   margin-bottom: 5px;
 }
 
-.blue h1 {
+.blue h1, .red h1 {
   color: #fff;
 }
 
@@ -38,7 +48,7 @@ h1 {
   color: #333;
 }
 
-.blue .desc {
+.blue .desc, .red .desc {
   color: #f4f8ff;
 }
 
@@ -54,6 +64,10 @@ h1 {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.red .price-box {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 button {
   background-color: #0078ff;
   color: white;
@@ -61,11 +75,17 @@ button {
   padding: 12px 24px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 .blue button {
   background-color: #fff;
   color: #0078ff;
+}
+
+.red button {
+  background-color: #fff;
+  color: #ff4d4d;
 }
 
 button:hover {
@@ -74,4 +94,8 @@ button:hover {
 
 .blue button:hover {
   background-color: #e0e0e0;
+}
+
+.red button:hover {
+  background-color: #ffe3e3;
 }
