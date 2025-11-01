@@ -2,10 +2,12 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  gap: 30px;
 }
 
 .container {
@@ -17,14 +19,27 @@ body {
   width: 400px;
 }
 
+.container.blue {
+  background-color: #0078ff;
+  color: #fff;
+}
+
 h1 {
   color: #0078ff;
   margin-bottom: 5px;
 }
 
+.blue h1 {
+  color: #fff;
+}
+
 .desc {
   font-size: 16px;
   color: #333;
+}
+
+.blue .desc {
+  color: #f4f8ff;
 }
 
 .price-box {
@@ -33,6 +48,10 @@ h1 {
   padding: 10px;
   margin: 20px 0;
   font-size: 18px;
+}
+
+.blue .price-box {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 button {
@@ -44,6 +63,15 @@ button {
   cursor: pointer;
 }
 
+.blue button {
+  background-color: #fff;
+  color: #0078ff;
+}
+
 button:hover {
   background-color: #005ecc;
+}
+
+.blue button:hover {
+  background-color: #e0e0e0;
 }
