@@ -2,13 +2,16 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;
   margin: 0;
   gap: 30px;
+  padding: 40px;
 }
+
 
 .container {
   background-color: #fff;
