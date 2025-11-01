@@ -1,0 +1,49 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: #0078ff;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: 16px;
+  color: #333;
+}
+
+.price-box {
+  background-color: #f4f8ff;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+button {
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005ecc;
+}
